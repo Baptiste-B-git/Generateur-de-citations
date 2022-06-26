@@ -2,12 +2,14 @@ html,
 body {
   background: linear-gradient(to right, #4389a2, #5c258d);
   height: 100%;
-  min-width: 500px;
+  /* min-width: 500px; */
+  margin-top: 30px;
 }
 
 #citation {
   font-size: 2em;
   text-align: center;
+  align-items: center;
   font-family: 'Satisfy';
   line-height: 1.3em;
   letter-spacing: 1px;
@@ -20,6 +22,8 @@ body {
   font-style: italic;
   text-align: center;
   padding: 20px;
+  position: bottom;
+  /* font-weight: 700; */
 }
 
 #nouveau {
@@ -40,4 +44,54 @@ body {
   margin: 0 auto;
   background-color: white;
   padding: 20px;
+}
+
+@media screen and (max-width: 580px){
+  #citation {
+    font-size: 20px;
+  }
+  #auteur {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 430px){
+  #citation {
+    font-size: 18px;
+  }
+  #auteur {
+    padding: 20px;
+  }
+  .container {
+    height: 160px;
+  }
+}
+@media screen and (max-width: 400px){
+  #auteur {
+    padding: 11px;
+  }
+  #nouveau{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 350px){
+  #citation {
+    font-size: 16px;
+  }
+  #auteur {
+    font-size: 18px;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 310px){
+  #citation {
+    font-size: 15px;
+  }
+  #auteur {
+    font-size: 16px;
+    padding: 8px;
+  }
+  #nouveau{
+    font-size: 13px;
+  }
 }
